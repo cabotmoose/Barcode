@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EF822471BF3CB0A0085FF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF822461BF3CB0A0085FF0D /* AppDelegate.swift */; };
+		7EF822491BF3CB0A0085FF0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF822481BF3CB0A0085FF0D /* ViewController.swift */; };
+		7EF8224C1BF3CB0A0085FF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF8224A1BF3CB0A0085FF0D /* Main.storyboard */; };
+		7EF8224E1BF3CB0A0085FF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF8224D1BF3CB0A0085FF0D /* Assets.xcassets */; };
+		7EF822511BF3CB0A0085FF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF8224F1BF3CB0A0085FF0D /* LaunchScreen.storyboard */; };
+		7EF8225C1BF3CB0A0085FF0D /* BarcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8225B1BF3CB0A0085FF0D /* BarcodeTests.swift */; };
+		7EF822671BF3CB0A0085FF0D /* BarcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF822661BF3CB0A0085FF0D /* BarcodeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EF822581BF3CB0A0085FF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF8223B1BF3CB0A0085FF0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EF822421BF3CB0A0085FF0D;
+			remoteInfo = Barcode;
+		};
+		7EF822631BF3CB0A0085FF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF8223B1BF3CB0A0085FF0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EF822421BF3CB0A0085FF0D;
+			remoteInfo = Barcode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EF822431BF3CB0A0085FF0D /* Barcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF822461BF3CB0A0085FF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EF822481BF3CB0A0085FF0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EF8224B1BF3CB0A0085FF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EF8224D1BF3CB0A0085FF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EF822501BF3CB0A0085FF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EF822521BF3CB0A0085FF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF822571BF3CB0A0085FF0D /* BarcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF8225B1BF3CB0A0085FF0D /* BarcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeTests.swift; sourceTree = "<group>"; };
+		7EF8225D1BF3CB0A0085FF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF822621BF3CB0A0085FF0D /* BarcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF822661BF3CB0A0085FF0D /* BarcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeUITests.swift; sourceTree = "<group>"; };
+		7EF822681BF3CB0A0085FF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EF822401BF3CB0A0085FF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF822541BF3CB0A0085FF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF8225F1BF3CB0A0085FF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EF8223A1BF3CB0A0085FF0D = {
+			isa = PBXGroup;
+			children = (
+				7EF822451BF3CB0A0085FF0D /* Barcode */,
+				7EF8225A1BF3CB0A0085FF0D /* BarcodeTests */,
+				7EF822651BF3CB0A0085FF0D /* BarcodeUITests */,
+				7EF822441BF3CB0A0085FF0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EF822441BF3CB0A0085FF0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EF822431BF3CB0A0085FF0D /* Barcode.app */,
+				7EF822571BF3CB0A0085FF0D /* BarcodeTests.xctest */,
+				7EF822621BF3CB0A0085FF0D /* BarcodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EF822451BF3CB0A0085FF0D /* Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				7EF822461BF3CB0A0085FF0D /* AppDelegate.swift */,
+				7EF822481BF3CB0A0085FF0D /* ViewController.swift */,
+				7EF8224A1BF3CB0A0085FF0D /* Main.storyboard */,
+				7EF8224D1BF3CB0A0085FF0D /* Assets.xcassets */,
+				7EF8224F1BF3CB0A0085FF0D /* LaunchScreen.storyboard */,
+				7EF822521BF3CB0A0085FF0D /* Info.plist */,
+			);
+			path = Barcode;
+			sourceTree = "<group>";
+		};
+		7EF8225A1BF3CB0A0085FF0D /* BarcodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EF8225B1BF3CB0A0085FF0D /* BarcodeTests.swift */,
+				7EF8225D1BF3CB0A0085FF0D /* Info.plist */,
+			);
+			path = BarcodeTests;
+			sourceTree = "<group>";
+		};
+		7EF822651BF3CB0A0085FF0D /* BarcodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7EF822661BF3CB0A0085FF0D /* BarcodeUITests.swift */,
+				7EF822681BF3CB0A0085FF0D /* Info.plist */,
+			);
+			path = BarcodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EF822421BF3CB0A0085FF0D /* Barcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF8226B1BF3CB0A0085FF0D /* Build configuration list for PBXNativeTarget "Barcode" */;
+			buildPhases = (
+				7EF8223F1BF3CB0A0085FF0D /* Sources */,
+				7EF822401BF3CB0A0085FF0D /* Frameworks */,
+				7EF822411BF3CB0A0085FF0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Barcode;
+			productName = Barcode;
+			productReference = 7EF822431BF3CB0A0085FF0D /* Barcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EF822561BF3CB0A0085FF0D /* BarcodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF8226E1BF3CB0A0085FF0D /* Build configuration list for PBXNativeTarget "BarcodeTests" */;
+			buildPhases = (
+				7EF822531BF3CB0A0085FF0D /* Sources */,
+				7EF822541BF3CB0A0085FF0D /* Frameworks */,
+				7EF822551BF3CB0A0085FF0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EF822591BF3CB0A0085FF0D /* PBXTargetDependency */,
+			);
+			name = BarcodeTests;
+			productName = BarcodeTests;
+			productReference = 7EF822571BF3CB0A0085FF0D /* BarcodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EF822611BF3CB0A0085FF0D /* BarcodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF822711BF3CB0A0085FF0D /* Build configuration list for PBXNativeTarget "BarcodeUITests" */;
+			buildPhases = (
+				7EF8225E1BF3CB0A0085FF0D /* Sources */,
+				7EF8225F1BF3CB0A0085FF0D /* Frameworks */,
+				7EF822601BF3CB0A0085FF0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EF822641BF3CB0A0085FF0D /* PBXTargetDependency */,
+			);
+			name = BarcodeUITests;
+			productName = BarcodeUITests;
+			productReference = 7EF822621BF3CB0A0085FF0D /* BarcodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EF8223B1BF3CB0A0085FF0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Cameron Smith";
+				TargetAttributes = {
+					7EF822421BF3CB0A0085FF0D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					7EF822561BF3CB0A0085FF0D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7EF822421BF3CB0A0085FF0D;
+					};
+					7EF822611BF3CB0A0085FF0D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7EF822421BF3CB0A0085FF0D;
+					};
+				};
+			};
+			buildConfigurationList = 7EF8223E1BF3CB0A0085FF0D /* Build configuration list for PBXProject "Barcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EF8223A1BF3CB0A0085FF0D;
+			productRefGroup = 7EF822441BF3CB0A0085FF0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EF822421BF3CB0A0085FF0D /* Barcode */,
+				7EF822561BF3CB0A0085FF0D /* BarcodeTests */,
+				7EF822611BF3CB0A0085FF0D /* BarcodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EF822411BF3CB0A0085FF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF822511BF3CB0A0085FF0D /* LaunchScreen.storyboard in Resources */,
+				7EF8224E1BF3CB0A0085FF0D /* Assets.xcassets in Resources */,
+				7EF8224C1BF3CB0A0085FF0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF822551BF3CB0A0085FF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF822601BF3CB0A0085FF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EF8223F1BF3CB0A0085FF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF822491BF3CB0A0085FF0D /* ViewController.swift in Sources */,
+				7EF822471BF3CB0A0085FF0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF822531BF3CB0A0085FF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF8225C1BF3CB0A0085FF0D /* BarcodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF8225E1BF3CB0A0085FF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF822671BF3CB0A0085FF0D /* BarcodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EF822591BF3CB0A0085FF0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EF822421BF3CB0A0085FF0D /* Barcode */;
+			targetProxy = 7EF822581BF3CB0A0085FF0D /* PBXContainerItemProxy */;
+		};
+		7EF822641BF3CB0A0085FF0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EF822421BF3CB0A0085FF0D /* Barcode */;
+			targetProxy = 7EF822631BF3CB0A0085FF0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EF8224A1BF3CB0A0085FF0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EF8224B1BF3CB0A0085FF0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EF8224F1BF3CB0A0085FF0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EF822501BF3CB0A0085FF0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EF822691BF3CB0A0085FF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EF8226A1BF3CB0A0085FF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EF8226C1BF3CB0A0085FF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Barcode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabotmoose.Barcode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7EF8226D1BF3CB0A0085FF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Barcode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabotmoose.Barcode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7EF8226F1BF3CB0A0085FF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BarcodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabotmoose.BarcodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barcode.app/Barcode";
+			};
+			name = Debug;
+		};
+		7EF822701BF3CB0A0085FF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BarcodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabotmoose.BarcodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barcode.app/Barcode";
+			};
+			name = Release;
+		};
+		7EF822721BF3CB0A0085FF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BarcodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabotmoose.BarcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Barcode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7EF822731BF3CB0A0085FF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BarcodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabotmoose.BarcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Barcode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EF8223E1BF3CB0A0085FF0D /* Build configuration list for PBXProject "Barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF822691BF3CB0A0085FF0D /* Debug */,
+				7EF8226A1BF3CB0A0085FF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EF8226B1BF3CB0A0085FF0D /* Build configuration list for PBXNativeTarget "Barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF8226C1BF3CB0A0085FF0D /* Debug */,
+				7EF8226D1BF3CB0A0085FF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EF8226E1BF3CB0A0085FF0D /* Build configuration list for PBXNativeTarget "BarcodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF8226F1BF3CB0A0085FF0D /* Debug */,
+				7EF822701BF3CB0A0085FF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EF822711BF3CB0A0085FF0D /* Build configuration list for PBXNativeTarget "BarcodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF822721BF3CB0A0085FF0D /* Debug */,
+				7EF822731BF3CB0A0085FF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EF8223B1BF3CB0A0085FF0D /* Project object */;
+}
