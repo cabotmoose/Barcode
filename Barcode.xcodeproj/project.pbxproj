@@ -14,6 +14,9 @@
 		7EF822511BF3CB0A0085FF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF8224F1BF3CB0A0085FF0D /* LaunchScreen.storyboard */; };
 		7EF8225C1BF3CB0A0085FF0D /* BarcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8225B1BF3CB0A0085FF0D /* BarcodeTests.swift */; };
 		7EF822671BF3CB0A0085FF0D /* BarcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF822661BF3CB0A0085FF0D /* BarcodeUITests.swift */; };
+		7EF822751BF3D31E0085FF0D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF822741BF3D31E0085FF0D /* ListTableViewController.swift */; };
+		7EF822791BF3E83F0085FF0D /* DiscoveredBarCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF822781BF3E83F0085FF0D /* DiscoveredBarCodeView.swift */; };
+		7EF8227D1BF553E90085FF0D /* UPCApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8227C1BF553E90085FF0D /* UPCApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		7EF822621BF3CB0A0085FF0D /* BarcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF822661BF3CB0A0085FF0D /* BarcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeUITests.swift; sourceTree = "<group>"; };
 		7EF822681BF3CB0A0085FF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF822741BF3D31E0085FF0D /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		7EF822781BF3E83F0085FF0D /* DiscoveredBarCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveredBarCodeView.swift; sourceTree = "<group>"; };
+		7EF8227C1BF553E90085FF0D /* UPCApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				7EF822461BF3CB0A0085FF0D /* AppDelegate.swift */,
-				7EF822481BF3CB0A0085FF0D /* ViewController.swift */,
 				7EF8224A1BF3CB0A0085FF0D /* Main.storyboard */,
-				7EF8224D1BF3CB0A0085FF0D /* Assets.xcassets */,
-				7EF8224F1BF3CB0A0085FF0D /* LaunchScreen.storyboard */,
-				7EF822521BF3CB0A0085FF0D /* Info.plist */,
+				7EF8227B1BF553CD0085FF0D /* Model */,
+				7EF822771BF3D5460085FF0D /* Views */,
+				7EF822761BF3D53A0085FF0D /* Supporting Files */,
 			);
 			path = Barcode;
 			sourceTree = "<group>";
@@ -123,6 +128,34 @@
 				7EF822681BF3CB0A0085FF0D /* Info.plist */,
 			);
 			path = BarcodeUITests;
+			sourceTree = "<group>";
+		};
+		7EF822761BF3D53A0085FF0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EF8224F1BF3CB0A0085FF0D /* LaunchScreen.storyboard */,
+				7EF8224D1BF3CB0A0085FF0D /* Assets.xcassets */,
+				7EF822521BF3CB0A0085FF0D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EF822771BF3D5460085FF0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EF822481BF3CB0A0085FF0D /* ViewController.swift */,
+				7EF822741BF3D31E0085FF0D /* ListTableViewController.swift */,
+				7EF822781BF3E83F0085FF0D /* DiscoveredBarCodeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7EF8227B1BF553CD0085FF0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EF8227C1BF553E90085FF0D /* UPCApi.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EF822751BF3D31E0085FF0D /* ListTableViewController.swift in Sources */,
+				7EF822791BF3E83F0085FF0D /* DiscoveredBarCodeView.swift in Sources */,
 				7EF822491BF3CB0A0085FF0D /* ViewController.swift in Sources */,
 				7EF822471BF3CB0A0085FF0D /* AppDelegate.swift in Sources */,
+				7EF8227D1BF553E90085FF0D /* UPCApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
