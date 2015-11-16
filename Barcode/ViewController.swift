@@ -8,6 +8,7 @@
 
 import AVFoundation
 import UIKit
+import CoreData
 
 class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
@@ -16,11 +17,17 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     let listButton = UIButton()
     let scanButton = UIButton()
     let itemLabel = UILabel()
+    var currentItems = [NSManagedObject]()
     
     var fillLayer:CAShapeLayer?
+    var scannerBeep:AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let scannerBeep = self.setupAudioPlayerWithFile("scanner-beep", type: "mp3") {
+            self.scannerBeep = scannerBeep
+        }
         
         captureSession = AVCaptureSession()
         
@@ -130,6 +137,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             let readableObject = metadataObject as! AVMetadataMachineReadableCodeObject;
             
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+            self.scannerBeep?.play()
             foundCode(readableObject.stringValue);
         }
         
@@ -148,17 +156,61 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                     self.itemLabel.text = item!
                     self.itemLabel.hidden = false
                 })
+                if self.checkIfItemExists(item!) {
+                    print("Already exists")
+                } else {
+                    self.saveItem(item!)
+                }
                 print("Here's that item: \(item!)")
             } else {
                 dispatch_async(dispatch_get_main_queue(), {
                     self.fillLayer!.fillColor = UIColor.redColor().CGColor
                     self.itemLabel.textColor = UIColor.blackColor()
-                    self.itemLabel.text = "Ummm idk.."
+                    self.itemLabel.text = "Can't find that one..."
                     self.itemLabel.hidden = false
                 })
                 print("Invalid item champ")
             }
         })
+    }
+    
+    //MARK: CoreData
+    func checkIfItemExists(name:String) -> Bool {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "Item")
+        let predicate = NSPredicate(format: "name == %@", name as NSString)
+        fetchRequest.predicate = predicate
+        var exists:Bool?
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            currentItems = results as! [NSManagedObject]
+            if currentItems.count > 0 {
+                exists = true
+            } else {
+                exists = false
+            }
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        return exists!
+    }
+    
+    func saveItem(name:String) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext: managedContext)
+        let item = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        item.setValue(name, forKey: "name")
+        
+        do {
+            try managedContext.save()
+            
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -169,6 +221,21 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         return .Portrait
     }
     
+    //MARK: Sound methods
+    func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer? {
+        let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        let url = NSURL.fileURLWithPath(path!)
+        
+        var audioPlayer:AVAudioPlayer?
+        
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOfURL: url)
+        } catch {
+            print("Audio player not available")
+        }
+        
+        return audioPlayer
+    }
     
     //MARK: Actions
     func listIconPressed(sender: UIButton!) {

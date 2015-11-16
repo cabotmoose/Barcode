@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3BF8011BF905A400AE4059 /* ListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BF7FF1BF905A400AE4059 /* ListModel.xcdatamodeld */; };
+		7E3BF8051BF91DC100AE4059 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BF8041BF91DC100AE4059 /* AudioToolbox.framework */; };
+		7E3BF8071BF91DCA00AE4059 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BF8061BF91DCA00AE4059 /* MediaPlayer.framework */; };
+		7E3BF8091BF9206200AE4059 /* scanner-beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3BF8081BF9206200AE4059 /* scanner-beep.mp3 */; };
 		7EF822471BF3CB0A0085FF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF822461BF3CB0A0085FF0D /* AppDelegate.swift */; };
 		7EF822491BF3CB0A0085FF0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF822481BF3CB0A0085FF0D /* ViewController.swift */; };
 		7EF8224C1BF3CB0A0085FF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF8224A1BF3CB0A0085FF0D /* Main.storyboard */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E3BF8001BF905A400AE4059 /* ListModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListModel.xcdatamodel; sourceTree = "<group>"; };
+		7E3BF8041BF91DC100AE4059 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7E3BF8061BF91DCA00AE4059 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7E3BF8081BF9206200AE4059 /* scanner-beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "scanner-beep.mp3"; sourceTree = "<group>"; };
 		7EF822431BF3CB0A0085FF0D /* Barcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF822461BF3CB0A0085FF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF822481BF3CB0A0085FF0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3BF8071BF91DCA00AE4059 /* MediaPlayer.framework in Frameworks */,
+				7E3BF8051BF91DC100AE4059 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +143,9 @@
 		7EF822761BF3D53A0085FF0D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E3BF8081BF9206200AE4059 /* scanner-beep.mp3 */,
+				7E3BF8061BF91DCA00AE4059 /* MediaPlayer.framework */,
+				7E3BF8041BF91DC100AE4059 /* AudioToolbox.framework */,
 				7EF8224F1BF3CB0A0085FF0D /* LaunchScreen.storyboard */,
 				7EF8224D1BF3CB0A0085FF0D /* Assets.xcassets */,
 				7EF822521BF3CB0A0085FF0D /* Info.plist */,
@@ -154,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				7EF8227C1BF553E90085FF0D /* UPCApi.swift */,
+				7E3BF7FF1BF905A400AE4059 /* ListModel.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -263,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF822511BF3CB0A0085FF0D /* LaunchScreen.storyboard in Resources */,
+				7E3BF8091BF9206200AE4059 /* scanner-beep.mp3 in Resources */,
 				7EF8224E1BF3CB0A0085FF0D /* Assets.xcassets in Resources */,
 				7EF8224C1BF3CB0A0085FF0D /* Main.storyboard in Resources */,
 			);
@@ -290,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF822751BF3D31E0085FF0D /* ListTableViewController.swift in Sources */,
+				7E3BF8011BF905A400AE4059 /* ListModel.xcdatamodeld in Sources */,
 				7EF822791BF3E83F0085FF0D /* DiscoveredBarCodeView.swift in Sources */,
 				7EF822491BF3CB0A0085FF0D /* ViewController.swift in Sources */,
 				7EF822471BF3CB0A0085FF0D /* AppDelegate.swift in Sources */,
@@ -384,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -422,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -518,6 +534,7 @@
 				7EF8226D1BF3CB0A0085FF0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EF8226E1BF3CB0A0085FF0D /* Build configuration list for PBXNativeTarget "BarcodeTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +543,7 @@
 				7EF822701BF3CB0A0085FF0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EF822711BF3CB0A0085FF0D /* Build configuration list for PBXNativeTarget "BarcodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,8 +552,22 @@
 				7EF822731BF3CB0A0085FF0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E3BF7FF1BF905A400AE4059 /* ListModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E3BF8001BF905A400AE4059 /* ListModel.xcdatamodel */,
+			);
+			currentVersion = 7E3BF8001BF905A400AE4059 /* ListModel.xcdatamodel */;
+			path = ListModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7EF8223B1BF3CB0A0085FF0D /* Project object */;
 }
